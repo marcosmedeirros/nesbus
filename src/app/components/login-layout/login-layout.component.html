@@ -2,11 +2,12 @@
   <section class="form-section">
     <img class="login-logo" src="/assets/imgs/logonesbus.png" alt="logo">
     <h2>{{ tituloLogin }}</h2>
-    <button class="entrar-botao">{{ entrarBotao }}</button>
+    <ng-content></ng-content>
+    <button class="entrar-botao" (click)="submit()">{{ entrarBotao }}</button>
     <div>
       <span>Ou</span>
     </div>
-    <button class="cadastrar-botao">{{cadastrarBotao}}</button>
+    <button class="cadastrar-botao" (click)="navigate()">{{cadastrarBotao}}</button>
   </section>
 
   <section class="main-section">

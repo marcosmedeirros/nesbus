@@ -2,5 +2,24 @@
   tituloLogin = "Cadastro de Usuário"
   entrarBotao = "Entrar"
   cadastrarBotao = "Cadastrar"
+  (submit)="submit()"
+  (navigate)="navigate()"
 >
+  <form [formGroup]="loginForm">
+    <app-input-login
+      formControlName="email"
+      InputName="email"
+      type="email"
+      label="Email"
+      placeholder="marcos@gmail.com">
+    </app-input-login>
+
+    <app-input-login
+      formControlName="password"
+      InputName="password"
+      type="password"
+      label="Senha">
+    </app-input-login>
+    <span>Esqueceu sua Senha?</span>
+  </form>
 </app-login-layout>
