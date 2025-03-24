@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {LoginLayoutComponent} from "../../components/login-layout/login-layout.component";
 
 @Component({
@@ -11,5 +11,6 @@ import {LoginLayoutComponent} from "../../components/login-layout/login-layout.c
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+
 
 }
