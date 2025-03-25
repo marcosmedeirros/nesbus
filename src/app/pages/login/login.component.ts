@@ -4,6 +4,8 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {InputLoginComponent} from "../../components/input-login/input-login.component";
 import {Router} from "@angular/router";
 import { LoginService } from '../../services/login.service';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +26,8 @@ export class LoginComponent {
 
   constructor(
     private router: Router,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private toastrService: ToastrService
   ) {
 
     this.loginForm = new FormGroup({
@@ -35,18 +38,16 @@ export class LoginComponent {
 
   submit() {
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
-      next: () => {
-        console.log("Logado com sucesso");
-      },
-      error: () => {
-        console.log("Erro ao logar");
-      }
+      next: () => {this.toastrService.success("Logado com sucesso!")},
+      error: () => {this.toastrService.error("Erro ao logar, Tente novamente!")}
     })
   }
 
   navigate() {
     this.router.navigate(["/cadastrar"]);
   }
+
+
 
 
 }

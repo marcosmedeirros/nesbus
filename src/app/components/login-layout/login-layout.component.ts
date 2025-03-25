@@ -11,6 +11,7 @@ export class LoginLayoutComponent {
   @Input() tituloLogin: string = '';
   @Input() entrarBotao: string = '';
   @Input() cadastrarBotao: string = '';
+  @Input() validarbotao: boolean = true;
   @Output("submit") onsubmit = new EventEmitter();
   @Output("navigate") onnavigate = new EventEmitter();
 
