@@ -7,6 +7,10 @@ import { LoginService } from '../../services/login.service';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { ToastrService } from 'ngx-toastr';
 
+interface LoginForm {
+  email: string;
+  password: string;
+}
 @Component({
   selector: 'app-login',
   standalone: true,

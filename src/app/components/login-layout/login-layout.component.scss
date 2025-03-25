@@ -1,89 +1,83 @@
 @import '../../../styles/variables.scss';
 
-main{
+main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #C7C6C2;
+  background: white;
+  height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
 
-
-  section{
-    height: 100%;
+  section {
+    width: 100%;
+    max-width: 400px;
+    background: #C7C6C2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .main-section{
-    gap: 8px;
-    flex-grow: 1;
-    background: #6A9BAC;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
-    .titulo-login{
-      padding-top: 100px;
-      font-size: 54px;
-      font-weight: bold;
+  button {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &.entrar-botao {
+      background: $secondary-color;
       color: white;
     }
 
-    .login-banner{
-      padding-bottom: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    &.cadastrar-botao {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+      color: white;
+      margin-bottom: 10px;
     }
-
   }
 
-  .form-section{
-    flex-grow: 0.3;
-    padding:  0 35px;
-    gap: 35px;
+  .login-logo {
+    width: 150px;
+    height: 150px;
+    background: #C7C6C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 0;
+  }
 
-    h1{
+  @media (max-width: 768px) {
+    section {
+      width: 90%;
+    }
+
+    h1 {
       font-size: 20px;
-      font-weight: bold;
     }
-
-    button{
-      width: 100%;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      border: none;
-      background: transparent;
-      padding: 12px 24px;
-      cursor: pointer;
-
-
-      &.entrar-botao{
-        background: $secondary-color;
-        color: white;
-      }
-
-      &.cadastrar-botao{
-        border: 1px solid $primary-color;
-        background: $primary-color;
-        color: white;
-
-      }
-
-
-    }
-
-    .login-logo{
-      width: 200px;
-      height: 200px;
-      background: #C7C6C2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
   }
 
-
-
+  span{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
