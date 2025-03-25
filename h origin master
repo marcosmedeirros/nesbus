@@ -1,0 +1,29 @@
+[33mcommit a877b2ef713608c947700fb344adb942cf177956[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Marcos Medeiros <109443751+marcosmedeirros@users.noreply.github.com>
+Date:   Mon Mar 24 23:21:05 2025 -0300
+
+    Envio de dados pelo console, tive um erro de versão do HTTPClient
+
+[33mcommit 1fe3bb4eebbead1030fd68db3b1f415882f33b05[m[33m ([m[1;31mnesbus/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Marcos Medeiros <109443751+marcosmedeirros@users.noreply.github.com>
+Date:   Mon Mar 24 20:12:51 2025 -0300
+
+    Adição de Layout e aplicação de inputs e funções
+
+[33mcommit 7301a16a42ee3c3184d0207ebe2f8cf47ee5cef6[m
+Author: Marcos Medeiros <109443751+marcosmedeirros@users.noreply.github.com>
+Date:   Mon Mar 24 16:22:03 2025 -0300
+
+    Finalização do Style da pagina login-layout.component.html
+
+[33mcommit f7861825b25e67671da6952fbaa5d5625cb85466[m
+Author: Marcos Medeiros <109443751+marcosmedeirros@users.noreply.github.com>
+Date:   Mon Mar 24 15:16:48 2025 -0300
+
+    Criação do projeto NESBUS
+
+[33mcommit b7a822702ff0a1c5f1582579ad115022650502d3[m
+Author: Marcos Medeiros <109443751+marcosmedeirros@users.noreply.github.com>
+Date:   Mon Mar 24 14:52:14 2025 -0300
+
+    initial commit
